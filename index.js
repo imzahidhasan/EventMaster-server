@@ -8,9 +8,7 @@ const eventRoutes = require("./routes/events");
 const app = express();
 
 app.use(
-  cors({
-    origin: "*",
-  })
+  cors()
 );
 
 app.use(express.json());
