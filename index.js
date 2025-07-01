@@ -8,7 +8,10 @@ const eventRoutes = require("./routes/events");
 const app = express();
 
 app.use(
-  cors()
+  cors({
+    origin: ["https://event-master-101.netlify.app", "http://localhost:5173"], // Allow requests from these origins
+    credentials: true, // Allow cookies to be sent with requests
+  })
 );
 
 app.use(express.json());
