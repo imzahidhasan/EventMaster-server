@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://event-master-101.netlify.app",
+    origin: "*",
     credentials: true,
   })
 );
